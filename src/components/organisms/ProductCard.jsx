@@ -11,7 +11,7 @@ function ProductCard({ product }) {
             <Image src={product.image} alt={product.name} className="product-card-img"></Image>
             <div className="product-card-content">
                 <CardBody titulo={product.name} descripcion={product.description} precio={product.price}/>
-                <Button onClick={() => navigate('/products/${product.id}')}>Ver detalles</Button>
+                <Button onClick={() => navigate(`/products/${product.id}`)}>Ver detalles</Button>
             </div>
         </div>
     );

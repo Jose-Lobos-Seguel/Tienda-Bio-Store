@@ -1,20 +1,21 @@
+import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import NavHeader from "./components/organisms/NavHeader.jsx"
 import ProductCard from './components/organisms/ProductCard.jsx'
-import Products from './data/Products.jsx'
-import './App.css'
+import Inicio from './pages/Inicio.jsx'
+import Products from './pages/Products.jsx'
 
 function App() {
   return (
-    <div>
+    <>
       <NavHeader/>
-      <div>
-        {Products.map((item) => (
-        <h2>key={item.id} product={item.name}</h2>
-        ))}
-      </div>
-    </div>
-  )
+      <Routes>
+        <Route path='/' element={<Inicio/>} />
+        <Route path='/inicio' element={<Inicio/>} />
+        <Route path='/products' element={<Products/>} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
