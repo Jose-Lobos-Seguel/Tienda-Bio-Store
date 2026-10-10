@@ -5,7 +5,7 @@ function NavMenu() {
     return(
         <nav className="molecule-nav-menu">
             <NavLink href="/inicio">Inicio</NavLink>
-            <NavLink href="/productos">Productos</NavLink>
+            <NavLink href="/products">Productos</NavLink>
             <NavLink href="/nosotros">Nosotros</NavLink>
             <NavLink href="/contacto">Contacto</NavLink>
         </nav>

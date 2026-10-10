@@ -11,7 +11,7 @@ const Products = [
    name: 'S.H.FIGUARTS: Bleach - Ichigo Kurosaki (Getsuga Tensho)',
    description: 'Ichigo Kurosaki en su forma Bankai llega a S.H. Figuarts.',
    price: 90000,
-   image: 'https://media2.nin-nin-game.com/588082/shfiguarts-bleach-ichigo-kurosaki-getsuga-tensho-bandai-spirits-.jpg'
+   image: 'https://media3.nin-nin-game.com/498401/shfiguarts-bleach-ichigo-kurosaki-getsuga-tensho-bandai-spirits-.jpg'
  },
  {
    id: 3,
@@ -43,10 +43,10 @@ const Products = [
  },
  {
    id: 7,
-   name: 'Re:Zero Starting Life in Another World: Emilia - Royal Candidates and Knight Figures',
-   description: 'La figura de Emilia de Re:Zero -Starting Life in Another World- forma parte de la colección FuRyu Prizes Royal Candidates and Knight Figures - Emilias Camp -.',
-   price: 30000,
-   image: 'https://media1.nin-nin-game.com/837513/rezero-starting-life-in-another-world-emilia-royal-candidates-and-knight-figures-emilia-s-camp-2nd-hand-furyu-.jpg'
+   name: 'Re:ZERO - Starting Life in Another World: Emilia (Plastic Model)',
+   description: 'De Re:ZERO - Starting Life in Another World llega la heroína medio elfa Emilia, que se une a la colección Kadokawa Plastic Model Series. ',
+   price: 48000,
+   image: 'https://media3.nin-nin-game.com/628085/rezero-starting-life-in-another-world-emilia-plastic-model-kadokawa-.jpg'
  }
 ];
 

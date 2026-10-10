@@ -1,8 +1,8 @@
 import React from "react";
 
-function Text({ children, variant = "p", classname }){
+function Text({ children, variant = "p", className }){
     const Tag = variant;
-    return <Tag classname={classname}>{children}</Tag>;
+    return <Tag className={className}>{children}</Tag>;
 }
 
 export default Text;
