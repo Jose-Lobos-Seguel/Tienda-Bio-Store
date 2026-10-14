@@ -1,18 +1,34 @@
 import React from "react";
+import { useState } from "react";
 import products from "../data/Products";
 import ProductCard from "../components/organisms/ProductCard";
 import Container from "../components/atoms/Container";
 import Row from "../components/atoms/Row";
 
 function Products(){
+    const [busqueda, setBusqueda] = useState("");
+    const productosFiltrados = products.filter((product) =>
+        product.name.toLowerCase().includes(busqueda.toLowerCase())
+    );
+
     return(
         <Container className={"my-5"}>
+
             <h1>Productos</h1>
+            <input
+                type="text"
+                placeholder="Buscar producto..."
+                value={busqueda}
+                onChange={(e) => setBusqueda(e.target.value)}
+                className="buscador"
+            />
+
             <Row>
-                {products.map((product) => (
+                {productosFiltrados.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
             </Row>
+            
         </Container>
     );
 }
