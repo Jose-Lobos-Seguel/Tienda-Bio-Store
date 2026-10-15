@@ -13,16 +13,17 @@ function Products(){
 
     return(
         <Container className={"my-5"}>
-
-            <h1>Productos</h1>
-            <input
-                type="text"
-                placeholder="Buscar producto..."
-                value={busqueda}
-                onChange={(e) => setBusqueda(e.target.value)}
-                className="buscador"
-            />
-
+            <div className="product-titulo">
+                <h1>Productos</h1>
+                <input
+                    type="text"
+                    placeholder="Buscar producto..."
+                    value={busqueda}
+                    onChange={(e) => setBusqueda(e.target.value)}
+                    className="buscador"
+                />
+            </div>
+            
             <Row>
                 {productosFiltrados.map((product) => (
                     <ProductCard key={product.id} product={product} />
