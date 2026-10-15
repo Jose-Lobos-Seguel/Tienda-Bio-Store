@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../molecules/logo.jsx"
+import Logo from "../molecules/Logo.jsx"
 import NavMenu from "../molecules/NavMenu.jsx"
 
 function NavHeader() {
