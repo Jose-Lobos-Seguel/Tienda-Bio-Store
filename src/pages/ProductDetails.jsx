@@ -38,9 +38,9 @@ function ProductDetails() {
           <h2>{product.name}</h2>
           <p>{product.description}</p>
           <h4 className="detalles-precio">${product.price}</h4>
-          <Button onClick={() => navigate("/products")}>Volver</Button>
+          <Button className="button-detail" onClick={() => navigate("/products")}>Volver</Button>
           <p className={stock > 0 ? "stock" : "agotado"}>{stock > 0 ? `En Stock: ${stock}` : "Agotado"}</p>
-          <Button className="btn" disabled={stockDe == 0} onClick={handleAgregar}>Agregar al carrito</Button>
+          <Button className="button-add" disabled={stockDe == 0} onClick={handleAgregar}>Agregar al carrito</Button>
         </div>
       </div>
     </Container>

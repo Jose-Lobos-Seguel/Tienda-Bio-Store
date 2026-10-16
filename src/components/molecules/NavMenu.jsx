@@ -10,6 +10,7 @@ function NavMenu() {
             <NavLink href="/contacto">Contacto</NavLink>
             <NavLink href="/carrito">Carrito</NavLink>
             <NavLink href="/login">Iniciar Sesion</NavLink>
+            <NavLink href="/Admin">Admin</NavLink>
         </nav>
     );
 }

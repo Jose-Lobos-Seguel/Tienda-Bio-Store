@@ -11,6 +11,7 @@ import ProductDetails from './pages/ProductDetails.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Pago from './pages/Pago.jsx'
 import Carrito from './pages/Carrito.jsx'
+import Admin from './pages/Admin.jsx'
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path='/pago' element={<Pago />} />
         <Route path='/carrito' element={<Carrito />} />
+        <Route path='/admin' element={<Admin/>}/>
       </Routes>
     </>
   );

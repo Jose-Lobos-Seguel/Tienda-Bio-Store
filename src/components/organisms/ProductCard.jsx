@@ -21,8 +21,8 @@ function ProductCard({ product }) {
             <Image src={product.image} alt={product.name} className="product-card-img"></Image>
             <div className="product-card-content">
                 <CardBody titulo={product.name} descripcion={product.description} precio={product.price}/>
-                <Button onClick={() => navigate(`/products/${product.id}`)}>Ver detalles</Button>
-                <Button className="btn" disabled={stockDe == 0} onClick={handleAgregar}>Agregar al carrito</Button>
+                <Button className="button-detail"onClick={() => navigate(`/products/${product.id}`)}>Ver detalles</Button>
+                <Button className="button-add" disabled={stockDe == 0} onClick={handleAgregar}>Agregar al carrito</Button>
 
             </div>
         </div>

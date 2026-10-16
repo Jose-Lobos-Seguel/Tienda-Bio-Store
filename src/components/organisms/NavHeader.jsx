@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../molecules/Logo.jsx"
-import NavMenu from "../molecules/NavMenu.jsx"
+import NavLink from "../atoms/NavLink.jsx"
+import NavMenu from "../molecules/NavMenu.jsx";
 
 function NavHeader() {
     return(
