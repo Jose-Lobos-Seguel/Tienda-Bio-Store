@@ -193,3 +193,128 @@
     background-color: #d7191f85;
     color: white;
 }
+
+.panel-caja {
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.caja {
+    max-width: 450px;
+    margin: 60px auto 40px;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-top: 4px solid red;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.caja h2 {
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+.caja .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: none;
+}
+
+.caja input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.caja .btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 0;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caja .btn:hover {
+    background-color: red;
+}
+
+.caja p {
+    text-align: center;
+    margin: 16px 0 0;
+}
+
+.caja .login-error {
+    text-align: center;
+    margin: 0;
+}
+
+.caja-pago {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.form-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.form-pago input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.footer {
+    margin-top: 250px;
+    padding: 32px;
+    background-color: #292828;
+    color: white;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0 0 12px;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 16px 0;
+}
+
+.footer-copy {
+    margin: 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.categoria-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}

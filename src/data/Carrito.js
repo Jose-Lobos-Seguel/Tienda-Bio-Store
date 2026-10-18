@@ -1,4 +1,4 @@
-import { stockDe } from "./Stock";
+import { stockProducto } from "./Stock";
 
 export function obtenerCarrito() {
   return JSON.parse(localStorage.getItem("carrito")) || [];
@@ -8,7 +8,7 @@ export function agregarAlCarrito(id) {
   const carrito = obtenerCarrito();
   const enCarrito = carrito.filter((x) => x === id).length;
 
-  if (enCarrito >= stockDe(id)) {
+  if (enCarrito >= stockProducto(id)) {
     return false;
   }
 

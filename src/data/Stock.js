@@ -1,21 +1,28 @@
-import products from "./Products";
+import { obtenerProductos, obtenerProducto, actualizarProducto } from "./ProductsBD";
 
 export function obtenerStock() {
-  const guardado = JSON.parse(localStorage.getItem("stock")) || {};
   const stock = {};
-
-  products.forEach((p) => {
-    stock[p.id] = guardado[p.id] ?? p.stock;
-  });
+  const lista = obtenerProductos();
+  for (const producto of lista) {
+    stock[producto.id] = producto.stock;
+  }
   return stock;
 }
 
-export function stockDe(id) {
-  return obtenerStock()[id];
+export function stockProducto(id) {
+  const producto = obtenerProducto(id);
+  if (producto) {
+    return producto.stock;
+  }
+  return 0;
 }
 
 export function descontarStock(ids) {
-  const stock = obtenerStock();
-  ids.forEach((id) => {stock[id] = stock[id] - 1;});
-  localStorage.setItem("stock", JSON.stringify(stock));
+  for (const id of ids) {
+    const producto = obtenerProducto(id);
+    if (producto) {
+      producto.stock = producto.stock - 1;
+      actualizarProducto(producto);
+    }
+  }
 }

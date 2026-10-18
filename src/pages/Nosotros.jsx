@@ -5,8 +5,8 @@ function Nosotros() {
     <Container className="my-5">
         <h1>Bio-Store</h1>
         <p>
-            Esta tienda es un pequeño proyecto informatico creado por Jose Lobos como lider de desarrollo
-            y Martin Galaz Como desarrollador, este proyecto se enfoca en la creacion de una tienda de figuras de coleccion.
+            Esta tienda es un pequeño proyecto informatico creado por Martin Galaz como lider de desarrollo
+            y Jose Lobos Como desarrollador, este proyecto se enfoca en la creacion de una tienda de figuras de coleccion.
         </p>
     </Container>
     );
