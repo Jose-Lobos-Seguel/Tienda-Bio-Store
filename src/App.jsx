@@ -14,7 +14,7 @@ import PagoCorrecto from './pages/PagoCorrecto.jsx'
 import PagoError from './pages/PagoError.jsx'
 import Carrito from './pages/Carrito.jsx'
 import Admin from './pages/Admin.jsx'
-
+import Footer from './components/organisms/Footer.jsx'
 function App() {
     return (
         <>
@@ -34,6 +34,7 @@ function App() {
             <Route path='/admin' element={<Admin/>}/>
             <Route path='/registro' element={<Registro/>}/>
         </Routes>
+        <Footer />
         </>
     );
 }
