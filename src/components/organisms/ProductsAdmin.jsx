@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../atoms/Button";
 import { obtenerProductos, crearProducto, actualizarProducto, eliminarProducto } from "../../data/ProductsBD";
 
-function ProductosAdmin() {
+function ProductsAdmin() {
     const [productos, setProductos] = useState(obtenerProductos());
     const [editandoId, setEditandoId] = useState(null);
     const [name, setName] = useState("");
@@ -137,4 +137,4 @@ function ProductosAdmin() {
     );
 }
 
-export default ProductosAdmin;
+export default ProductsAdmin;

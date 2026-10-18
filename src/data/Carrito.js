@@ -1,4 +1,4 @@
-import { stockProducto } from "./Stock";
+import { stockProducto } from "./Stock.js";
 
 export function obtenerCarrito() {
   return JSON.parse(localStorage.getItem("carrito")) || [];

@@ -13,10 +13,10 @@ function ResumenOrden({ orden }) {
             </tr>
             </thead>
             <tbody>
-            {orden.productos.map((producto, index) => (
+            {orden?.productos?.map((producto, index) => (
                 <tr key={index}>
-                <td>{producto.name}</td>
-                <td>${producto.price}</td>
+                    <td>{producto.name}</td>
+                    <td>${producto.price}</td>
                 </tr>
             ))}
             </tbody>

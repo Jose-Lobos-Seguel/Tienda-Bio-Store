@@ -1,4 +1,4 @@
-import productosIniciales from "./Products";
+import productosIniciales from "./Products.js";
 
 function guardar(lista) {
     localStorage.setItem("productos", JSON.stringify(lista));

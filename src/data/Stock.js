@@ -1,4 +1,4 @@
-import { obtenerProductos, obtenerProducto, actualizarProducto } from "./ProductsBD";
+import { obtenerProductos, obtenerProducto, actualizarProducto } from "./ProductsBD.js";
 
 export function obtenerStock() {
   const stock = {};

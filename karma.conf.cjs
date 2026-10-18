@@ -2,10 +2,12 @@ module.exports = function (config) {
  config.set({
    frameworks: ['jasmine'],
    files: [
-     'src/**/*.spec.jsx',
+     'src/test/setupTests.js',
+     'src/test/**/*.spec.jsx'
    ],
    preprocessors: {
-     'src/**/*.spec.jsx': ['webpack'],
+    'src/test/setupTests.js': ['webpack'],
+    'src/test/**/*.spec.jsx': ['webpack']
    },
    webpack: {
      mode: 'development',
@@ -25,6 +27,10 @@ module.exports = function (config) {
            test: /\.css$/,
            use: ['style-loader', 'css-loader'],
          },
+         {
+            test: /\.(webp|png|jpe?g|gif|svg)$/i,
+            type: 'asset/resource',
+          },
        ],
      },
      resolve: {

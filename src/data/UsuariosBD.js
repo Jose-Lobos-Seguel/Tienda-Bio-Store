@@ -1,4 +1,4 @@
-import usuariosIniciales from "./Usuarios";
+import usuariosIniciales from "./Usuarios.js";
 
 function guardar(lista) {
     localStorage.setItem("listaUsuarios", JSON.stringify(lista));
