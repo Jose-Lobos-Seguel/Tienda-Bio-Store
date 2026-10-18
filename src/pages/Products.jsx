@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import products from "../data/Products";
+import { obtenerProductos } from "../data/ProductsBD";
 import ProductCard from "../components/organisms/ProductCard";
 import Container from "../components/atoms/Container";
 import Row from "../components/atoms/Row";
 
 function Products(){
+    const products = obtenerProductos();
     const [busqueda, setBusqueda] = useState("");
     const productosFiltrados = products.filter((product) =>
         product.name.toLowerCase().includes(busqueda.toLowerCase())
@@ -14,7 +15,7 @@ function Products(){
     return(
         <Container className={"my-5"}>
             <div className="product-titulo">
-                <h1>Productos</h1>
+                <h2>Productos</h2>
                 <input
                     type="text"
                     placeholder="Buscar producto..."

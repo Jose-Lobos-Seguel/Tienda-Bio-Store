@@ -7,10 +7,8 @@ function NavMenu() {
             <NavLink href="/inicio">Inicio</NavLink>
             <NavLink href="/products">Productos</NavLink>
             <NavLink href="/nosotros">Nosotros</NavLink>
-            <NavLink href="/contacto">Contacto</NavLink>
             <NavLink href="/carrito">Carrito</NavLink>
             <NavLink href="/login">Iniciar Sesion</NavLink>
-            <NavLink href="/Admin">Admin</NavLink>
         </nav>
     );
 }
