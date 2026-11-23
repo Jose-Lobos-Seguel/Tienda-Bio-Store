@@ -5,6 +5,7 @@ import { obtenerProducto } from "../data/ProductsBD";
 import { obtenerCarrito, vaciarCarrito } from "../data/Carrito";
 import { descontarStock } from "../data/Stock";
 import { crearOrden } from "../data/OrdenesBD";
+import Text from "../components/atoms/Text";
 
 function Pago() {
     const navigate = useNavigate();
@@ -67,7 +68,7 @@ function Pago() {
     if (productos.length == 0) {
     return (
         <Container className="my-5">
-        <h2>Tu carro se encuetra vacio</h2>
+        <Text variant="h2">Tu carro se encuetra vacio</Text>
         </Container>
         );
     }
@@ -75,26 +76,26 @@ function Pago() {
     return (
     <Container className="my-5">
         <div className="caja caja-pago">
-            <h2>Pago</h2>
+            <Text variant="h2">Pago</Text>
 
             <table className="carrito-tabla">
                 <thead>
                     <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
+                    <Text variant="th">Producto</Text>
+                    <Text variant="th">Precio</Text>
                     </tr>
                 </thead>
                 <tbody>
                     {productos.map((producto, index) => (
                     <tr key={index}>
-                        <td>{producto.name}</td>
-                        <td>${producto.price}</td>
+                        <Text variant="td">{producto.name}</Text>
+                        <Text variant="td">${producto.price}</Text>
                     </tr>
                     ))}
                 </tbody>
             </table>
 
-            <p className="carrito-total">Total: ${total}</p>
+            <Text className="carrito-total">Total: ${total}</Text>
 
             <form onSubmit={handlePagar} className="form-pago">
                 <input type="text" placeholder="Nombre" value={nombre}

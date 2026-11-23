@@ -5,13 +5,6 @@ const usuarios = [
      correo: "admin@gmail.com",
      contraseña: "jejejeje",
      tipo: "admin"
-},
-{
-     id: 2,
-     name: "Martin",
-     email: "Elpibe@gmail.com",
-     password: "martineslacabrasionoprofebyron",
-     tipo: "usuario"
 }
 ];
 

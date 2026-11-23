@@ -1,0 +1,35 @@
+.button-add {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d71920;
+    color: white;
+}
+
+.button-detail {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5f5a70;
+    color: white;
+}
+
+.TabButton-on {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: #d71920;
+    color: white;
+}
+
+.TabButton-off {
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: #d7191f85;
+    color: white;
+}

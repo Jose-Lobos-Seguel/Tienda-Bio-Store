@@ -6,6 +6,7 @@ import Image from "../components/atoms/Image";
 import Button from "../components/atoms/Button";
 import { stockProducto } from "../data/Stock";
 import { agregarAlCarrito } from "../data/Carrito";
+import Text from "../components/atoms/Text";
 
 function ProductDetails() {
     const { id } = useParams();
@@ -15,7 +16,7 @@ function ProductDetails() {
     if (!product) {
         return (
         <Container className="my-5">
-            <h1>Producto no encontrado</h1>
+            <Text variant="h1">Producto no encontrado</Text>
             <Button className="btn" onClick={() => navigate("/products")}>Volver</Button>
         </Container>
         );
@@ -34,11 +35,11 @@ function ProductDetails() {
         <div className="caja">
             <Image src={product.image} alt={product.name} className="detalles-img" />
             <div>
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <h4 className="detalles-precio">${product.price}</h4>
+            <Text variant="h2">{product.name}</Text>
+            <Text>{product.description}</Text>
+            <Text variant="h4" className="detalles-precio">${product.price}</Text>
             <Button className="button-detail" onClick={() => navigate("/products")}>Volver</Button>
-            <p className={stock > 0 ? "stock" : "agotado"}>{stock > 0 ? `En Stock: ${stock}` : "Agotado"}</p>
+            <Text className={stock > 0 ? "stock" : "agotado"}>{stock > 0 ? `En Stock: ${stock}` : "Agotado"}</Text>
             <Button className="button-add" disabled={stockProducto == 0} onClick={handleAgregar}>Agregar al carrito</Button>
             </div>
         </div>

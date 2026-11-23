@@ -5,6 +5,7 @@ import ProductCard from "../components/organisms/ProductCard";
 import Container from "../components/atoms/Container";
 import Button from "../components/atoms/Button";
 import Row from "../components/atoms/Row";
+import Text from "../components/atoms/Text";
 
 function Products(){
     const products = obtenerProductos();
@@ -26,7 +27,7 @@ function Products(){
     return(
         <Container className={"my-5"}>
             <div className="product-titulo">
-                <h2>Productos</h2>
+                <Text variant="h2">Productos</Text>
                 <input
                     type="text"
                     placeholder="Buscar producto..."

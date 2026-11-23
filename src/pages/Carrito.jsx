@@ -4,6 +4,7 @@ import Container from "../components/atoms/Container";
 import Button from "../components/atoms/Button";
 import products from "../data/Products";
 import { obtenerCarrito, eliminarDelCarrito } from "../data/Carrito";
+import Text from "../components/atoms/Text"
 
 function Carrito() {
     const navigate = useNavigate();
@@ -22,36 +23,36 @@ function Carrito() {
 
     return (
         <Container className="my-5">
-        <h2>Carrito</h2>
+        <Text variant="h2">Carrito</Text>
 
         <table className="carrito-tabla">
             <thead>
             <tr>
-                <th>Productos</th>
-                <th>Precios</th>
-                <th>Eliminar</th>
+                <Text variant="th">Productos</Text>
+                <Text variant="th">Precios</Text>
+                <Text variant="th">Eliminar</Text>
             </tr>
             </thead>
             <tbody>
             {productosEnCarrito.length == 0 ? (
                 <tr>
-                <td colSpan="3">No hay productos en el carrito</td>
+                <Text variant="th" colSpan="3">No hay productos en el carrito</Text>
                 </tr>
             ) : (
                 productosEnCarrito.map((producto, index) => (
                 <tr key={index}>
-                    <td>{producto.name}</td>
-                    <td>${producto.price}</td>
-                    <td>
+                    <Text variant="td">{producto.name}</Text>
+                    <Text variant="td">${producto.price}</Text>
+                    <Text variant="td">
                     <Button className="btn"onClick={() => handleEliminar(producto.id)}>Eliminar</Button>
-                    </td>
+                    </Text>
                 </tr>
                 ))
             )}
             </tbody>
         </table>
 
-        <h2 className="carrito-total">Total: ${total}</h2>
+        <Text variant="h2" className="carrito-total">Total: ${total}</Text>
 
         {productosEnCarrito.length > 0 && (
             <Button className="btn" onClick={() => navigate("/pago")}>Pagar</Button>

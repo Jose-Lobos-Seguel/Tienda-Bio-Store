@@ -19,21 +19,21 @@ function App() {
     return (
         <>
         <NavHeader/>
-        <Routes>
-            <Route path='/' element={<Inicio/>}/>
-            <Route path='/inicio' element={<Inicio/>}/>
-            <Route path='/products' element={<Products/>}/>
-            <Route path='/nosotros' element={<Nosotros/>}/>
-            <Route path='/login' element={<Login />}/>
-            <Route path='/products/:id' element={<ProductDetails />} />
-            <Route path="*" element={<NotFound />}/>
-            <Route path='/pago' element={<Pago />}/>
-            <Route path='/pago-correcto/:id' element={<PagoCorrecto/>} />
-            <Route path='/pago-error/:id' element={<PagoError/>} />
-            <Route path='/carrito' element={<Carrito />}/>
-            <Route path='/admin' element={<Admin/>}/>
-            <Route path='/registro' element={<Registro/>}/>
-        </Routes>
+            <Routes>
+                <Route path='/' element={<Inicio/>}/>
+                <Route path='/inicio' element={<Inicio/>}/>
+                <Route path='/products' element={<Products/>}/>
+                <Route path='/nosotros' element={<Nosotros/>}/>
+                <Route path='/login' element={<Login />}/>
+                <Route path='/products/:id' element={<ProductDetails />} />
+                <Route path="*" element={<NotFound />}/>
+                <Route path='/pago' element={<Pago />}/>
+                <Route path='/pago-correcto/:id' element={<PagoCorrecto/>} />
+                <Route path='/pago-error/:id' element={<PagoError/>} />
+                <Route path='/carrito' element={<Carrito />}/>
+                <Route path='/admin' element={<Admin/>}/>
+                <Route path='/registro' element={<Registro/>}/>
+            </Routes>
         <Footer />
         </>
     );

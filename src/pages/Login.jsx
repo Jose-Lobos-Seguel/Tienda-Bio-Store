@@ -4,6 +4,7 @@ import Container from "../components/atoms/Container";
 import Button from "../components/atoms/Button";
 import usuarios from "../data/Usuarios";
 import { obtenerUsuarios } from "../data/UsuariosBD";
+import Text from "../components/atoms/Text"
 
 function Login() {
     const navigate = useNavigate();
@@ -37,7 +38,7 @@ function Login() {
     return (
         <Container className="my-5">
         <div className="caja">
-            <h2>Iniciar sesión</h2>
+            <Text variant="h2">Iniciar sesión</Text>
             <form onSubmit={handleLogin} className="login-form">
             <input
                 type="text"
@@ -55,7 +56,7 @@ function Login() {
             {error && <p className="login-error">{error}</p>}
 
             <Button type="submit" className="btn">Entrar</Button>
-            <p>No tienes cuenta? <Link to="/registro">Crear cuenta</Link></p>
+            <Text>No tienes cuenta? <Link to="/registro">Crear cuenta</Link></Text>
             </form>
         </div>
         </Container>
