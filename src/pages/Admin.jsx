@@ -5,6 +5,7 @@ import AdminDashboard from "../components/organisms/AdminDashboard";
 import ProductosAdmin from "../components/organisms/ProductsAdmin";
 import OrdenesAdmin from "../components/organisms/OrdenesAdmin";
 import UsuariosAdmin from "../components/organisms/UsuariosAdmin";
+import Text from "../components/atoms/Text";
 
 function Admin() {
     const navigate = useNavigate();
@@ -47,7 +48,7 @@ function Admin() {
     return(
         <Container>
             <div className="products-header">
-                <h1>Admin Dashboard</h1>
+                <Text variant="h1">Admin Dashboard</Text>
                 <Button className="btn" onClick={handleSalir}>Cerrar sesión</Button>
             </div>
             <AdminDashboard tabs={dashboardTabs}/>

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Container from "../components/atoms/Container";
 import Button from "../components/atoms/Button";
 import { crearUsuario, buscarPorCorreo } from "../data/UsuariosBD";
+import Text from "../components/atoms/Text";
 
 function Registro() {
     const navigate = useNavigate();
@@ -50,7 +51,7 @@ function Registro() {
     return (
         <Container className="my-5">
             <div className="caja">
-                <h2>Crear cuenta</h2>
+                <Text variant="h2">Crear cuenta</Text>
                 <form onSubmit={handleRegistro} className="login-form">
                     <input
                     type="text"

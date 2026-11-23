@@ -3,6 +3,7 @@ import Container from "../components/atoms/Container";
 import Button from "../components/atoms/Button";
 import ResumenOrden from "../components/organisms/ResumenOrden";
 import { obtenerOrden } from "../data/OrdenesBD";
+import Text from "../components/atoms/Text";
 
 function PagoError() {
     const { id } = useParams();
@@ -12,7 +13,7 @@ function PagoError() {
     if (!orden) {
         return (
         <Container className="my-5">
-            <h2>Orden no encontrada</h2>
+            <Text variant="h2">Orden no encontrada</Text>
         </Container>
         );
     }
@@ -20,7 +21,7 @@ function PagoError() {
     return (
     <Container className="my-5">
         <div className="caja caja-pago">
-            <h2>El pago no se pudo realizar con exito: {orden.id}</h2>
+            <Text variant="h2">El pago no se pudo realizar con exito: {orden.id}</Text>
             <Button className="btn" onClick={() => navigate("/pago")}>Volver a realizar el pago</Button>
             <ResumenOrden orden={orden} />
         </div>

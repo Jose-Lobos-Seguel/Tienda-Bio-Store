@@ -1,0 +1,22 @@
+
+.organism-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 35px;
+    background-color: whitesmoke;
+}
+
+.molecule-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+.molecule-nav-menu a {
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 3px;
+}

@@ -1,0 +1,17 @@
+.carrito-tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrito-tabla th,
+.carrito-tabla td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.carrito-total {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
