@@ -6,7 +6,7 @@ const Products = [
   price: 75000,
   stock: 4,
   category: 'Anime',
-  image: 'https://media1.nin-nin-game.com/768422/shfiguarts-jojos-bizarre-adventure-stone-ocean-jolyne-cujoh-bandai-spirits-.jpg'
+  image: 'https://i.ibb.co/yBBt0f06/shfiguarts-jojos-bizarre-adventure-stone-ocean-jolyne-cujoh-bandai-spirits.jpg'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const Products = [
     price: 90000,
     stock: 11,
     category: 'Anime',
-    image: 'https://media3.nin-nin-game.com/498401/shfiguarts-bleach-ichigo-kurosaki-getsuga-tensho-bandai-spirits-.jpg'
+    image: 'https://i.ibb.co/6ckvK5sF/shfiguarts-bleach-ichigo-kurosaki-getsuga-tensho-bandai-spirits.jpg'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const Products = [
     price: 135000,
     stock: 13,
     category: 'Juegos',
-    image: 'https://media2.nin-nin-game.com/491404/figma-metal-gear-solid-solid-snake-mgs2-ver-updated-edition-max-factory-good-smile-company-.jpg'
+    image: 'https://i.ibb.co/KjV75LNQ/figma-metal-gear-solid-solid-snake-mgs2-ver-updated-edition-max-factory-good-smile-company.jpg'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const Products = [
     price: 40000,
     stock: 7,
     category: 'Juegos',
-    image: 'https://media3.nin-nin-game.com/839280/nendoroid-544-dreamland-kirby-good-smile-company-used-.jpg'
+    image: 'https://i.ibb.co/Wp5Yw3Jx/nendoroid-544-dreamland-kirby-good-smile-company-used.jpg'
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const Products = [
     price: 57000,
     stock: 22,
     category: 'Comics',
-    image: 'https://media3.nin-nin-game.com/823762/mafex-no185-spider-man-classic-costume-ver-reissue-medicom-toy-.jpg'
+    image: 'https://i.ibb.co/WSrMhS9/mafex-no185-spider-man-classic-costume-ver-reissue-medicom-toy.jpg'
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const Products = [
     price: 30000,
     stock: 7,
     category: 'Anime',
-    image: 'https://media3.nin-nin-game.com/846773/shfiguarts-dragon-ball-super-super-saiyan-god-son-goku-god-aura-reissue-bandai-spirits-.jpg'
+    image: 'https://i.ibb.co/5hsbBysm/shfiguarts-dragon-ball-super-super-saiyan-god-son-goku-god-aura-reissue-bandai-spirits.jpg'
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const Products = [
     price: 48000,
     stock: 2,
     category: 'Anime',
-    image: 'https://media3.nin-nin-game.com/628085/rezero-starting-life-in-another-world-emilia-plastic-model-kadokawa-.jpg'
+    image: 'https://i.ibb.co/C55C3Ns3/rezero-starting-life-in-another-world-emilia-plastic-model-kadokawa.jpg'
   }
 ];
 

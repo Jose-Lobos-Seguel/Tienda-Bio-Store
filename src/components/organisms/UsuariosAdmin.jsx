@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { obtenerUsuarios,crearUsuario,buscarPorCorreo } from "../../data/UsuariosBD";
+import Text from "../atoms/Text";
 
 function UsuariosAdmin() {
     const [usuarios, setUsuarios] = useState(obtenerUsuarios());
@@ -42,9 +43,9 @@ function UsuariosAdmin() {
 
     return (
     <div>
-        <h2>Usuarios</h2>
+        <Text variant="h2">Usuarios</Text>
         <form onSubmit={handleCrear} className="login-form">
-            <h3>Nuevo usuario</h3>
+            <Text variant="h3">Nuevo usuario</Text>
 
             <input type="text" placeholder="Nombre de usuario" value={usuario}
             onChange={(e) => setUsuario(e.target.value)} />
@@ -57,26 +58,26 @@ function UsuariosAdmin() {
             <option value="usuario">Usuario</option>
             <option value="admin">Admin</option>
             </select>
-            {error && <p className="login-error">{error}</p>}
+            {error && <Text className="login-error">{error}</Text>}
             <button type="submit" className="btn">Crear usuario</button>
         </form>
 
         <table className="carrito-tabla">
             <thead>
             <tr>
-                <th>Id</th>
-                <th>Nombre de Usuario</th>
-                <th>Correo</th>
-                <th>Tipo de usuario</th>
+                <Text variant="th">Id</Text>
+                <Text variant="th">Nombre de Usuario</Text>
+                <Text variant="th">Correo</Text>
+                <Text variant="th">Tipo de usuario</Text>
             </tr>
             </thead>
             <tbody>
             {usuarios.map((u) => (
                 <tr key={u.id}>
-                <td>{u.id}</td>
-                <td>{u.usuario}</td>
-                <td>{u.correo}</td>
-                <td>{u.tipo}</td>
+                <Text variant="td">{u.id}</Text>
+                <Text variant="td">{u.usuario}</Text>
+                <Text variant="td">{u.correo}</Text>
+                <Text variant="td">{u.tipo}</Text>
                 </tr>
             ))}
             </tbody>
