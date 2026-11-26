@@ -17,7 +17,7 @@ function UsuariosAdmin() {
         setError("Completa todos los campos");
         return;
     }
-    if (!correo.includes("@")) {
+    if (!correo.includes("@gmail.com")) {
         setError("Correo inválido");
         return;
     }

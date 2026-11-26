@@ -15,9 +15,9 @@ export function obtenerUsuarios() {
 // Buscar por id
 export function obtenerUsuario(id) {
     const lista = obtenerUsuarios();
-    for (const usuario of lista) {
-        if (usuario.id === Number(id)) {
-        return usuario;
+    for (const nombre of lista) {
+        if (nombre.id === Number(id)) {
+        return nombre;
         }
     }
     return undefined;
@@ -26,8 +26,8 @@ export function obtenerUsuario(id) {
 // Buscar por correo
 export function buscarPorCorreo(correo) {
     const lista = obtenerUsuarios();
-    for (const usuario of lista) {
-        if (usuario.correo === correo) {
+    for (const nombre of lista) {
+        if (nombre.correo === correo) {
         return usuario;
         }
     }
