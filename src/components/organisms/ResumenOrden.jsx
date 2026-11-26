@@ -1,28 +1,30 @@
+import Text from "../atoms/Text";
+
 function ResumenOrden({ orden }) {
     return (
     <div>
-        <p>Boleta: Nº {orden.id}</p>
-        <p>Cliente: {orden.nombre} ({orden.correo})</p>
-        <p>Entrega: {orden.calle}, {orden.comuna}</p>
+        <Text>Boleta: Nº {orden.id}</Text>
+        <Text>Cliente: {orden.nombre} ({orden.correo})</Text>
+        <Text>Entrega: {orden.calle}, {orden.comuna}</Text>
 
         <table className="carrito-tabla">
             <thead>
             <tr>
-                <th>Producto</th>
-                <th>Precio</th>
+                <Text variant="th">Producto</Text>
+                <Text variant="th">Precio</Text>
             </tr>
             </thead>
             <tbody>
             {orden?.productos?.map((producto, index) => (
                 <tr key={index}>
-                    <td>{producto.name}</td>
-                    <td>${producto.price}</td>
+                    <Text variant="td">{producto.name}</Text>
+                    <Text variant="td">${producto.price}</Text>
                 </tr>
             ))}
             </tbody>
         </table>
 
-        <p className="carrito-total">Total: ${orden.total}</p>
+        <Text className="carrito-total">Total: ${orden.total}</Text>
         </div>
     );
 }

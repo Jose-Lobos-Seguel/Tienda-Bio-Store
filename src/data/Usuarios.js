@@ -1,10 +1,10 @@
 const usuarios = [
 {
      id: 1,
-     usuario: "Jose",
-     correo: "admin@gmail.com",
+     nombre: "Jose",
+     email: "admin@gmail.com",
      contraseña: "jejejeje",
-     tipo: "admin"
+     rolid: "admin"
 }
 ];
 

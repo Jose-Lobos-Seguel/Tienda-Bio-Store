@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "../atoms/Image.jsx"
-import logoimagen from "../../assets/LogoTienda.webp"
+import { Link } from "react-router-dom";
+
+const logoimagen = "https://i.ibb.co/5x5gRM6Z/Logo-Tienda.webp"
 
 function logo() {
     return(

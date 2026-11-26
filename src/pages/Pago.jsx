@@ -109,7 +109,7 @@ function Pago() {
                 <input type="text" placeholder="Tarjeta (16 números)" value={tarjeta}
                     onChange={(e) => setTarjeta(e.target.value)} />
 
-                {error && <p className="login-error">{error}</p>}
+                {error && <Text className="login-error">{error}</Text>}
 
                 <button type="submit" className="btn">Pagar ${total}</button>
             </form>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../atoms/Button";
 import { obtenerProductos, crearProducto, actualizarProducto, eliminarProducto } from "../../data/ProductsBD";
+import Text from "../atoms/Text";
 
 function ProductsAdmin() {
     const [productos, setProductos] = useState(obtenerProductos());
@@ -76,7 +77,7 @@ function ProductsAdmin() {
 
     return (
         <div>
-        <h2>Administración de Productos</h2>
+        <Text variant="">Administración de Productos</Text>
 
         <form onSubmit={handleGuardar} className="login-form">
             <h3>{editandoId === null ? "Nuevo producto" : "Editar producto"}</h3>
@@ -107,28 +108,28 @@ function ProductsAdmin() {
         <table className="carrito-tabla">
             <thead>
             <tr>
-                <th>Producto</th>
-                <th>Categoría</th>
-                <th>Precio</th>
-                <th>Stock</th>
-                <th>Acciones</th>
+                <Text variant="th">Producto</Text>
+                <Text variant="th">Categoría</Text>
+                <Text variant="th">Precio</Text>
+                <Text variant="th">Stock</Text>
+                <Text variant="th">Acciones</Text>
             </tr>
             </thead>
             <tbody>
             {productos.map((producto) => (
                 <tr key={producto.id}>
-                <td>{producto.name}</td>
-                <td>{producto.category}</td>
-                <td>${producto.price}</td>
-                <td>{producto.stock}</td>
-                <td>
+                <Text variant="td">{producto.name}</Text>
+                <Text variant="td">{producto.category}</Text>
+                <Text variant="td">${producto.price}</Text>
+                <Text variant="td">{producto.stock}</Text>
+                <Text variant="td">
                     <Button className="btn" onClick={() => handleEditar(producto)}>
                     Editar
                     </Button>
                     <Button className="btn" onClick={() => handleEliminar(producto.id)}>
                     Eliminar
                     </Button>
-                </td>
+                </Text>
                 </tr>
             ))}
             </tbody>
